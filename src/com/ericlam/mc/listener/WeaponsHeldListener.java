@@ -13,12 +13,10 @@ import java.util.HashMap;
 public class WeaponsHeldListener implements Listener {
     private final HashMap<String, Double> weaponDelay;
     private CountDownManager countDownManager;
-    private HashMap<Player, CountDown> delay;
 
     public WeaponsHeldListener() {
         weaponDelay = Config.getInstance(InvCSHDelay.plugin).getWeaponDelay();
         countDownManager = CountDownManager.getInstance();
-        delay = countDownManager.getCooldownMap();
     }
 
     @EventHandler

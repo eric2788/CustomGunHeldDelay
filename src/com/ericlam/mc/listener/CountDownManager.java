@@ -29,8 +29,4 @@ class CountDownManager {
         if (!cooldownMap.containsKey(player)) return true;
         return cooldownMap.get(player).isFinished();
     }
-
-    HashMap<Player, CountDown> getCooldownMap() {
-        return cooldownMap;
-    }
 }
