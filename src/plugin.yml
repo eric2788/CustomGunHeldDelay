@@ -1,0 +1,5 @@
+name: Individual-CSHeld-Delay
+main: com.ericlam.mc.main.InvCSHDelay
+version: 0.0.1
+authors: [Eric Lam, Hydranapse_]
+depend: [CrackShot, CrackShotPlus]
