@@ -42,6 +42,10 @@ class CountDown {
         return runnable.isCancelled();
     }
 
+    void setCancel() {
+        runnable.cancel();
+    }
+
     private String str(double count) {
         try {
             return new DecimalFormat().format(count);

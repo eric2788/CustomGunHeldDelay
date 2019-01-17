@@ -1,6 +1,7 @@
 package com.ericlam.mc.main;
 
 import org.bukkit.ChatColor;
+import org.bukkit.Sound;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.Plugin;
@@ -12,7 +13,7 @@ import java.util.Set;
 
 public class Config {
     public static String cdMSG, cdFinsih, notFinish;
-    private static Plugin plugin;
+    public static Sound sound, unableSound;
     private static Config config;
     private File itemFile;
     private FileConfiguration itemYml;
@@ -21,7 +22,6 @@ public class Config {
     private HashMap<String, Double> weaponDelay = new HashMap<>();
 
     private Config(Plugin plugin) {
-        Config.plugin = plugin;
         itemFile = new File(plugin.getDataFolder(), "weapons.yml");
         if (!itemFile.exists()) plugin.saveResource("weapons.yml", true);
         itemYml = YamlConfiguration.loadConfiguration(itemFile);
@@ -43,6 +43,8 @@ public class Config {
         cdMSG = ChatColor.translateAlternateColorCodes('&', configYml.getString("countdown-msg"));
         cdFinsih = ChatColor.translateAlternateColorCodes('&', configYml.getString("countdown-finish"));
         notFinish = ChatColor.translateAlternateColorCodes('&', configYml.getString("not-finish"));
+        sound = configYml.getString("sound-effect").isEmpty() ? null : Sound.valueOf(configYml.getString("sound-effect"));
+        unableSound = configYml.getString("unable-shoot").isEmpty() ? null : Sound.valueOf(configYml.getString("unable-shoot"));
         Set<String> key = itemYml.getKeys(false);
         for (String title : key) {
             double delay = itemYml.getDouble(title);

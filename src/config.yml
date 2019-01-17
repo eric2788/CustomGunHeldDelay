@@ -1,3 +1,5 @@
 countdown-msg: "&a冷卻 &e<count> &a秒"
 countdown-finish: "&c冷卻完成"
 not-finish: "&c暫時無法射擊"
+sound-effect: BLOCK_GLASS_BREAK
+unable-shoot: ENTITY_BLAZE_HURT

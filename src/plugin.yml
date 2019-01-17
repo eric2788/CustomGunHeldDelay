@@ -1,5 +1,12 @@
 name: Individual-CSHeld-Delay
 main: com.ericlam.mc.main.InvCSHDelay
-version: 0.0.1
+version: 1.0
 authors: [Eric Lam, Hydranapse_]
 depend: [CrackShot, CrackShotPlus]
+commands:
+  cshreload:
+    aliases: [cshdelayreload]
+    description: reload command
+permissions:
+  csh.reload:
+    description: permission to reload
