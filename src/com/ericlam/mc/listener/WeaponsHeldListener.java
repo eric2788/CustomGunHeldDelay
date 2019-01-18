@@ -40,7 +40,7 @@ public class WeaponsHeldListener implements Listener {
         Player player = e.getPlayer();
         if (!countDownManager.isFinsihed(player)) {
             e.setCancelled(true);
-            player.sendMessage(Config.notFinish);
+            if (Config.notFinish!=null)player.sendMessage(Config.notFinish);
             if (Config.unableSound != null) player.playSound(player.getLocation(), Config.unableSound, 1, 1);
         }
     }

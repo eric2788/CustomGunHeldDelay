@@ -42,7 +42,7 @@ public class Config {
     void loadItems() {
         cdMSG = ChatColor.translateAlternateColorCodes('&', configYml.getString("countdown-msg"));
         cdFinsih = ChatColor.translateAlternateColorCodes('&', configYml.getString("countdown-finish"));
-        notFinish = ChatColor.translateAlternateColorCodes('&', configYml.getString("not-finish"));
+        notFinish = configYml.getString("not-finish").isEmpty() ? null : ChatColor.translateAlternateColorCodes('&', configYml.getString("not-finish"));
         sound = configYml.getString("sound-effect").isEmpty() ? null : Sound.valueOf(configYml.getString("sound-effect"));
         unableSound = configYml.getString("unable-shoot").isEmpty() ? null : Sound.valueOf(configYml.getString("unable-shoot"));
         Set<String> key = itemYml.getKeys(false);
