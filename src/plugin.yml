@@ -1,5 +1,5 @@
-name: Individual-CSHeld-Delay
-main: com.ericlam.mc.main.InvCSHDelay
+name: CustomGunHeldDelay
+main: com.ericlam.mc.main.CustomGunHeldDelay
 version: 1.0
 authors: [Eric Lam, Hydranapse_]
 depend: [CrackShot, CrackShotPlus]

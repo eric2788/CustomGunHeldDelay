@@ -1,7 +1,7 @@
 package com.ericlam.mc.listener;
 
 import com.ericlam.mc.main.Config;
-import com.ericlam.mc.main.InvCSHDelay;
+import com.ericlam.mc.main.CustomGunHeldDelay;
 import net.md_5.bungee.api.ChatMessageType;
 import net.md_5.bungee.api.chat.TextComponent;
 import org.bukkit.entity.Player;
@@ -20,7 +20,7 @@ class CountDown {
     CountDown(Player player, double count) {
         this.player = player;
         this.count = count;
-        this.plugin = InvCSHDelay.plugin;
+        this.plugin = CustomGunHeldDelay.plugin;
     }
 
     void start() {

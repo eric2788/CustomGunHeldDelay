@@ -8,7 +8,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class InvCSHDelay extends JavaPlugin implements CommandExecutor {
+public class CustomGunHeldDelay extends JavaPlugin implements CommandExecutor {
     public static Plugin plugin;
 
     @Override

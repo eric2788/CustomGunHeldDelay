@@ -1,7 +1,7 @@
 package com.ericlam.mc.listener;
 
 import com.ericlam.mc.main.Config;
-import com.ericlam.mc.main.InvCSHDelay;
+import com.ericlam.mc.main.CustomGunHeldDelay;
 import com.shampaggon.crackshot.CSUtility;
 import com.shampaggon.crackshot.events.WeaponPrepareShootEvent;
 import me.DeeCaaD.CrackShotPlus.Events.WeaponHeldEvent;
@@ -18,7 +18,7 @@ public class WeaponsHeldListener implements Listener {
     private CountDownManager countDownManager;
 
     public WeaponsHeldListener() {
-        weaponDelay = Config.getInstance(InvCSHDelay.plugin).getWeaponDelay();
+        weaponDelay = Config.getInstance(CustomGunHeldDelay.plugin).getWeaponDelay();
         countDownManager = CountDownManager.getInstance();
     }
 
