@@ -8,4 +8,5 @@ CSP手持武器切換冷卻,不同武器不同倒數時間版本
 
 ### 前置: Crackshot, Crackshotplus
 
-### [下載插件](http://www.mediafire.com/file/g499aardxdaxz64/CustomGunHeldDelay.jar/file)
+### 下載
+[下載插件](http://corneey.com/wMiYVj) | [Mirror](https://drive.google.com/open?id=1oNFsjsq_0AcOD1CcXqjL6js5gPa5CtZK)
